@@ -1,0 +1,20 @@
+{
+    "name": "neam/yii-workflow-task-list",
+    "description": "todo",
+    "keywords": ["yii"],
+    "homepage": "https://github.com/neam/yii-workflow-task-list",
+    "type": "yii-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fredrik Wollsén",
+            "email": "fredrik@neam.se"
+        }
+    ],
+    "repositories": [
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii": ">=1.1.0"
+    }
+}
