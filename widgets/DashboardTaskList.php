@@ -45,7 +45,7 @@ class DashboardTaskList extends CWidget
      * @var array map of all available task query builder component class names.
      */
     static protected $queryBuilderComponents = array(
-        'DashboardGroupTranslatorTaskQueryBuilder'
+        '\DashboardGroupTranslatorTaskQueryBuilder'
     );
 
     /**
@@ -186,7 +186,7 @@ class DashboardTaskList extends CWidget
      */
     protected function createQueryBuilder($roleTitle)
     {
-        $className = "Dashboard{$roleTitle}TaskQueryBuilder";
+        $className = "\Dashboard{$roleTitle}TaskQueryBuilder";
         if (in_array($className, self::$queryBuilderComponents)) {
             return Yii::createComponent(array('class' => $className));
         }
