@@ -4,7 +4,7 @@ $config['components']['workflowUi'] = array(
     'class' => 'vendor.neam.yii-workflow-ui.components.WorkflowUi',
 );
 
-$config['modules']['p3media'] = array_merge_recursive($config['modules']['p3media'], array(
+$config['modules']['p3media'] = CMap::mergeArray($config['modules']['p3media'], array(
     'params' => array(
         'presets' => array(
             'dashboard-item-task-thumbnail' => array(
