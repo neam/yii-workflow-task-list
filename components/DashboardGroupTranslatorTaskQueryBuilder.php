@@ -19,7 +19,7 @@ class DashboardGroupTranslatorTaskQueryBuilder extends DashboardTaskQueryBuilder
                             '{$action}' AS action,
                             translate_into_{$language}_validation_progress AS progress,
                             '{$language}' AS language,
-                            'translation' AS task,
+                            'translate' AS task,
                             0 AS relevance
                           FROM _item i
                           INNER JOIN changeset AS c ON c.node_id = i.node_id
@@ -49,7 +49,7 @@ class DashboardGroupTranslatorTaskQueryBuilder extends DashboardTaskQueryBuilder
                             '{$action}' AS action,
                             translate_into_{$language}_validation_progress AS progress,
                             '{$language}' AS language,
-                            'translation' AS task,
+                            'translate' AS task,
                             0 AS relevance
                           FROM _item AS i
                           LEFT OUTER JOIN changeset AS c ON c.node_id = i.node_id AND c.user_id = :account_id

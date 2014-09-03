@@ -206,4 +206,15 @@ class DashboardTaskList extends CWidget
         $activeId = Html::generateActiveId($this->getTaskModel($data), 'title');
         return "{$data['task']}_{$data['language']}_{$activeId}";
     }
+
+    /**
+     * Returns an item model.
+     * @param string $modelClass the model class.
+     * @param int $id the model ID.
+     * @return ActiveRecord|ItemTrait
+     */
+    public function getItem($modelClass, $id)
+    {
+        return ActiveRecord::model($modelClass)->findByPk($id);
+    }
 } 
