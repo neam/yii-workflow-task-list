@@ -195,7 +195,7 @@ class DashboardTaskList extends CWidget
 
     public function createTaskId($data)
     {
-        if ($data['task'] === 'translation') {
+        if ($data['task'] === 'translate') {
             return $this->createTranslationId($data);
         }
         return '';
